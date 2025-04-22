@@ -20,7 +20,7 @@ cd server-c
 3. **Clone this template into the new directory (shallow clone)**
 
 ```bash
-git clone --depth=1 https://github.com/Naolt/mcp-server-templat.git temp
+git clone --depth=1 https://github.com/Naolt/mcp-server-template.git temp
 ```
 4. **Move all files from the temp folder to the current directory**
 
