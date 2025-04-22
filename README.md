@@ -1,24 +1,45 @@
-# mcp-server-template
+# 🛠️ How to Use This Template to Set Up a New MCP Server
 
-# Move into your main repo
+This template provides a ready-to-use setup for starting a new MCP (Model Context Protocol) server. Follow the steps below to scaffold a new server inside an existing monorepo or any project structure.
+
+---
+
+## 🚀 Steps to Initialize a New Server from This Template
+
+1. **Navigate to your main MCP repo**
+
+```bash
 cd path/to/mcp-servers
+```
+2. **Create and move into a directory for the new server**
 
-# Create the new server directory
+```bash
 mkdir server-c
 cd server-c
+```
+3. **Clone this template into the new directory (shallow clone)**
 
-# Use git to clone the template into this folder (shallow clone)
-git clone --depth=1 https://github.com/<your-username>/mcp-bootstrap.git temp
+```bash
+git clone --depth=1 https://github.com/Naolt/mcp-server-templat.git temp
+```
+4. **Move all files from the temp folder to the current directory**
 
-# Move the contents of the temp folder to your new server folder
+```bash
 mv temp/* temp/.* . 2>/dev/null || true
+```
+5. **Remove the temporary folder and .git directory to unlink from the template repo**
 
-# Remove the temp folder and .git to unlink it from the template repo
+```bash
 rm -rf temp .git
+```
+6. **Go back to the root of your monorepo**
 
-# Go back to the root of your monorepo
+```bash
 cd ..
+```
+7. **Add the new server to your monorepo git repo and commit**
 
-# Add the new server to your existing git
+```bash
 git add server-c
 git commit -m "Add new MCP server 'server-c' from bootstrap template"
+```
